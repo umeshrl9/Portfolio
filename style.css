@@ -197,3 +197,29 @@ main{
 #skills img{
     height: 80%;
 }
+
+#skills .card{
+    position: relative;
+}
+
+.card-body h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#skills .card:hover{
+    bottom:5px;
+}
+
+#skills{
+    background-color: #190741;
+}
+
+#skills h1{
+    color: white;
+    font-family: var(--bs-body-font-family);
+}
+
+#skills{
+    margin-bottom: -20px;
+}
+
