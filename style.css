@@ -156,3 +156,12 @@ main img{
 .pfp{
     margin: auto;
 }
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+main{
+    padding-top: 3rem !important;
+}
