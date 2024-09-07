@@ -1,0 +1,136 @@
+/* Base styles */
+header {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.nav-item {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Pixelify Sans", sans-serif;
+    color: yellow;
+    font-size: 1.6rem;
+}
+
+/* Hamburger menu hidden on larger screens */
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-left: auto;
+    color: white;
+}
+
+/* Desktop right-items container */
+.right-items {
+    display: flex;
+    margin-left: auto;
+}
+
+.end-item {
+    margin: 5%;
+}
+
+.social{
+    margin-right: 10px;
+}
+
+.socials a{
+    position: relative;
+}
+.socials a:hover{
+    bottom: 3px;
+}
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Stack items vertically */
+        align-items: flex-start;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Keep the LOREM IPSUM and hamburger aligned horizontally */
+    .nav-item {
+        margin-bottom: 0;
+    }
+
+    .row-item{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .right-items {
+        flex-direction: column;  /* Stack menu items vertically */
+        display: none;           /* Hidden by default */
+        width: 100%;             /* Take full width */
+        background-color: black;
+    }
+
+    .end-item {
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+        border-top: 1px solid gray;
+    }
+
+    /* Hamburger menu visible on smaller screens */
+    .hamburger {
+        margin-left: auto;
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    /* When the menu is toggled, show the items */
+    .right-items.active {
+        display: flex; /* Show the items */
+    }
+
+    nav.active{
+        flex-direction: column;
+    }
+}
+
+/* Media query for very small screens (mobile devices) */
+@media (max-width: 480px) {
+    .nav-item {
+        font-size: 1.4rem;
+    }
+
+    .end-item {
+        font-size: 1.2rem;
+    }
+
+    .lead{
+        font-size: 1rem;
+    }
+}
+
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+main img{
+    border-radius: 50px;
+}
+
+/* Changes the font settings of the introduction */
+.lead{
+    font-weight: 400;
+}
+
+.pfp{
+    margin: auto;
+}
