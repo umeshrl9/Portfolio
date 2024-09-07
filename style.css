@@ -281,3 +281,27 @@ main{
     display: flex;
     justify-content: center;
 }
+
+.contact-heading{
+    text-align: center;
+}
+
+.contact-input{
+    font-weight: bold;
+}
+
+.form-control:valid {
+    border: 3px solid rgb(125, 204, 7);
+}
+
+.contact-input{
+    margin: auto;
+}
+
+.submit-button{
+    margin: auto;
+}
+
+#contact h4{
+    margin-bottom: 3%;
+}
