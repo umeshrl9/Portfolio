@@ -50,6 +50,16 @@ nav {
     bottom: 3px;
 }
 
+.name a{
+    text-decoration: none;
+    color: yellow;
+}
+
+.end-item a{
+    text-decoration: none;
+    color: white;
+}
+
 /* Media query for tablets and smaller devices */
 @media (max-width: 768px) {
     nav {
@@ -120,7 +130,19 @@ nav {
     background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
-}
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 main img{
     border-radius: 50px;
