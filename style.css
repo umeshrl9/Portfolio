@@ -215,8 +215,11 @@ main{
 }
 
 #skills h1{
-    color: white;
-    font-family: var(--bs-body-font-family);
+    font-family: "Jersey 10", sans-serif;
+    color: yellow;
+    letter-spacing: 3px;
+    font-size: 300%;
+    
 }
 
 #skills{
