@@ -305,3 +305,10 @@ main{
 #contact h4{
     margin-bottom: 3%;
 }
+
+@media screen and (max-width:500px) {
+    nav{ 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+}
